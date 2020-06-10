@@ -11,16 +11,6 @@
     "test": "jest",
     "console": "SET NODE_ENV=development && npm-run-all build consoleserver"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LopsanJesus/es6-console-template.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LopsanJesus/es6-console-template/issues"
-  },
-  "homepage": "https://github.com/LopsanJesus/es6-console-template#readme",
   "dependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
