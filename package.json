@@ -1,0 +1,48 @@
+{
+  "name": "es6-console-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm-run-all clean transpile",
+    "consoleserver": "node ./dist-server/app.js",
+    "transpile": "babel ./console --out-dir dist-server",
+    "clean": "rimraf dist-server",
+    "test": "jest",
+    "console": "SET NODE_ENV=development && npm-run-all build consoleserver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LopsanJesus/es6-console-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LopsanJesus/es6-console-template/issues"
+  },
+  "homepage": "https://github.com/LopsanJesus/es6-console-template#readme",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "node-cron": "^2.0.3",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "jest": "^25.2.7"
+  }
+}
